@@ -73,8 +73,8 @@ describe("Cursor Methods and Aggregation Equivalents", () => {
      *
      * The "year" field denotes the release date of each movie, so the
      * .sort([["year", 1]]) will sort our results on the "year" key, in
-     * ascending order. Conversely, .sort([["year", -1]]) would return them in
-     * descending order.
+     * ascending order. Conversely, 
+     * .sort([["year", -1]]) would return them in descending order.
      */
     const sortedCursor = movies
       .find({ directors: "Sam Raimi" }, { _id: 0, year: 1, title: 1, cast: 1 })
